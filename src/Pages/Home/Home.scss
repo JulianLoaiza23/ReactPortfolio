@@ -1,0 +1,36 @@
+@import "../../Styles/colors";
+
+#home {
+  position: relative;
+  background: var(--color-black);
+  color: var(--color-white);
+  height: 100%;
+
+  .container {
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    .console-container {
+      font-size: 2rem;
+      display: flex;
+
+      .focus-cursor {
+        &.flicker {
+          opacity: 0;
+        }
+      }
+    }
+
+    button {
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 0;
+      background-color: var(--color-blue);
+      color: var(--color-white);
+    }
+  }
+}
